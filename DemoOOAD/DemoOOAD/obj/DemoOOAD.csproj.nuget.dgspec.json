@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hieu Tran\\source\\repos\\DemoOOAD\\DemoOOAD\\DemoOOAD.csproj": {}
+    "D:\\demo_OOAD\\DemoOOAD\\DemoOOAD\\DemoOOAD.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hieu Tran\\source\\repos\\DemoOOAD\\DemoOOAD\\DemoOOAD.csproj": {
+    "D:\\demo_OOAD\\DemoOOAD\\DemoOOAD\\DemoOOAD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hieu Tran\\source\\repos\\DemoOOAD\\DemoOOAD\\DemoOOAD.csproj",
+        "projectUniqueName": "D:\\demo_OOAD\\DemoOOAD\\DemoOOAD\\DemoOOAD.csproj",
         "projectName": "DemoOOAD",
-        "projectPath": "C:\\Users\\Hieu Tran\\source\\repos\\DemoOOAD\\DemoOOAD\\DemoOOAD.csproj",
+        "projectPath": "D:\\demo_OOAD\\DemoOOAD\\DemoOOAD\\DemoOOAD.csproj",
         "packagesPath": "C:\\Users\\Hieu Tran\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hieu Tran\\source\\repos\\DemoOOAD\\DemoOOAD\\obj\\",
+        "outputPath": "D:\\demo_OOAD\\DemoOOAD\\DemoOOAD\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

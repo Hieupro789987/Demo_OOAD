@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -27,6 +27,10 @@ namespace DemoOOAD
         {
             services.AddControllersWithViews();
             services.AddDbContext<DEMO_OOADContext>(option => option.UseSqlServer(Configuration.GetConnectionString("OOAD_H5")));
+            services.AddDistributedMemoryCache();
+
+            services.AddDistributedMemoryCache();           // Đăng ký dịch vụ lưu cache trong bộ nhớ (Session sẽ sử dụng nó)
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,6 +39,7 @@ namespace DemoOOAD
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseSession();
             }
             else
             {
@@ -48,7 +53,7 @@ namespace DemoOOAD
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseSession();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

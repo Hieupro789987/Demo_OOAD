@@ -1,4 +1,5 @@
 ﻿using System;
+using DemoOOAD.Controllers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
@@ -234,5 +235,10 @@ namespace DemoOOAD.Entities
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+        public static implicit operator DEMO_OOADContext(DemoOOADContext v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

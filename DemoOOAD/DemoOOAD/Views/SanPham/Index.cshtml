@@ -1,0 +1,57 @@
+﻿@model IEnumerable<DemoOOAD.Entities.MonAn>
+
+@{
+    ViewData["Title"] = "Index";
+}
+@section Css{
+    <link href="~/css/menu.css" rel="stylesheet" />
+}
+<h1>@ViewBag.Ma</h1>
+
+<div class="row">
+    <div class="col-3 ma1">
+        <img src="~/image/sanpham/1.jpg" class="img-fluid" />
+        <h3>SInh to Dau</h3>
+        <div>
+            <div class="price">20000</div>
+            <div class="des">
+                ssssssssssssssssssssssssssssssssssssssssssssssss
+            </div>
+        </div>
+        <button class="btn btn-success detail-view" data-toggle="modal" data-target="#sss">Xem chi tiet</button>
+    </div>
+
+
+</div>
+<div class="modal fade" id="sss" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <form asp-controller="Cart" asp-action="addToCart"  method="post">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="" class="img-fluid" />
+                        </div>
+                        <div class="col-7">
+                            <h3></h3>
+                            <h4></h4>
+                            <input id="ma1" name="id" type="hidden" value="ma1" />
+                            <input name="quantity" type="number" value="1" min="1" />
+                            <p></p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary addCart">Thêm vào Giỏ</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/modal.js"></script>
+}
+

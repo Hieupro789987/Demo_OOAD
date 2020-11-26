@@ -33,5 +33,10 @@ namespace DemoOOAD.Areas.Admin.Controllers
             _context.SaveChanges();
             return RedirectToAction("Index");
         }
+       public IActionResult Edit(string id)
+        {
+            
+            return View();
+        }
     }
 }
